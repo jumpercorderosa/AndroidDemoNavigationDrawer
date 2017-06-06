@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.logonrm.demonavigationdrawer.Fragment.FormularioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvVlr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor 1"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etVlr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVlr1"
+            android:fontFamily="monospace"
+            android:hint="Informe o valor 1" />
+
+        <TextView
+            android:id="@+id/tvVlr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor 2"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etVlr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVlr2"
+            android:fontFamily="monospace"
+            android:hint="Informe o valor 2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="+"
+                android:onClick="somar"/>
+
+            <Button
+                android:id="@+id/btMinus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="-"
+                android:onClick="subtrair"/>
+
+            <Button
+                android:id="@+id/btMultiply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="*"
+                android:onClick="multiplicar"/>
+
+            <Button
+                android:id="@+id/btDivide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="/"
+                android:onClick="dividir"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVlr1"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+</FrameLayout>
